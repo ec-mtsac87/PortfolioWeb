@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Staatliches&family=League+Spartan:wght@100..900&display=swap');
+
+@keyframes LoadIn {
+    0% {
+        opacity: 0%;
+    } 
+    100% {
+        opacity: 100%;
+    }
+}
+
+/*      B A S I C    S T R U C T U R E    & 
+R E P E T I T I V E    S T Y L E S         */
+
+body {
+    font-family: Staatliches;
+    letter-spacing: 3px;
+    width: 100%;
+    min-height: 100vh;
+    color: rgb(255, 255, 255);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+    animation: LoadIn 1.25s ease-in none normal;
+}
+
+h3 {
+    font-family: Prata;
+    letter-spacing: 5px;
+    padding: 0;
+    margin: 0;
+    font-size: 2rem;
+}
+
+img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+a:visited {
+    color: inherit;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.page {
+    box-sizing: border-box;
+    padding: 2% 0 0 0;
+}
+
+.content {
+    width: 100%;
+    overflow: hidden;
+}
+
+.title {
+    font-size: 50px;
+    height: 100px;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title1 h3 {
+    letter-spacing: 10px;
+}
+
+/***** CONTENT STYLES BEGIN HERE *****/
+
+.page1 {
+    background-color: #003e5b;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 2% 0 0 0;
+}
+
+.hero-content {
+    width: 100%;
+    padding: 2%;
+    margin: 0 5%;
+    gap: 5%;
+    display:flex;
+    align-items: start;
+    justify-content: space-evenly;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.profile {
+
+}
+
+.hero {
+
+}
+
+.webstack ul {
+    display: flex;
+    width: 100%;
+}
+
+.page1 nav {
+    min-height: 100px;
+}
+
+.name-plaque {
+    box-sizing: border-box;
+    overflow: hidden;
+    max-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.name-plaque img {
+    display: block;
+    width: 100%;
+}
+
+.erik {
+    background-color: rgb(0, 0, 0);
+    aspect-ratio: 1 /1;
+    width: 30rem;
+    border-radius: 100%;
+    z-index: 2;
+    box-shadow: 0px 0px 40px 3px rgb(0, 75, 110); 
+    border: 2px solid rgba(255, 255, 255, 0);
+    overflow: hidden;
+    border: 3px solid rgba(0, 0, 0, 0.315);
+}
+
+.erik img {
+    width: 100%;
+    z-index: 1;
+    display: block;
+}
+
+.hero-bio {
+    min-width: 45em;
+    box-sizing: border-box;
+    padding: 2%;
+    background-color: black;
+}
+
+.hero-bio h1 {
+    font-size: 4rem;
+    letter-spacing: .5rem;
+    padding: 0;
+    margin: 0;
+}
+
+/* P A G E    2 */
+
+.page2 {
+    background-color: #003e5b;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 2% 0 0 0;
+}
+
+.content2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.email-temp {
+    aspect-ratio: 9/ 16;
+    min-width: 25em;
+    max-width: 25em;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 2em;
+}
+
+/* P A G E    3 */
+
+.page3 {
+    background-color: #003e5b;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 2% 0 0 0;
+}
+
+.content3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.arrow-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1 /1;
+    max-width: 40px;
+    box-sizing: border-box;
+    object-fit: cover;
+    
+}
+
+.slider-wrapper {
+    max-width: 50rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.slider {
+    max-height: 50rem;
+    display: flex;
+    aspect-ratio: 16 /9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25); 
+    border-radius: 0.5rem;
+}
+
+.slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slider-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1rem;
+    bottom: 1.25rem;
+}
+
+.slider-nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+/* F O O T E R */
+
+footer {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
